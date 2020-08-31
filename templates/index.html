@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+</style>-->
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+	<center><h2>Translited Text Language Prediction</h2></center>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+	  <center><h1>Enter the text here:</h1></center>
+        <form method="post">
+	    <textarea name="inputtext" rows="10" cols="30"></textarea>
+	    <br><br>
+	    <center>
+            <input type="submit" value="Submit"><br>
+	    </center>
+        </form>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <center>
+    <h1>Prediction</h1>
+    <h2 class="word"> Input text: </h2>
+    <h2><span style="background-color:MediumSeaGreen">{{ inputtext }}</span></h2><br>
+       <div class="results">
+           <h2 class="result"> Bangla: <span style="color:blue">{{ bn }}</span>%</h2>
+	   <h2 class="result"> Korean: <span style="color:blue">{{ kr }}</span>%</h2>
+       </div>
+    </center>
+  </div>
+</div>
+
+
+</body>
+</html>
